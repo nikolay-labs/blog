@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  background-color: red;
+  padding: 10px;
+}
+
+.content,
+header#title-block-header,
+nav#TOC,
+section.level1 {
+  padding: 0 10px;
+  /* Default padding for small screens */
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 600px) {
+
+  .content,
+  header#title-block-header,
+  nav#TOC,
+  section.level1 {
+    padding: 0 20px;
+    /* Increased padding for medium screens */
+  }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1024px) {
+
+  .content,
+  header#title-block-header,
+  nav#TOC,
+  section.level1 {
+    padding: 0 200px;
+    /* Even more padding for large screens */
+  }
+}
+
+.articles {
+  padding: 0;
+}
+
+.articles>li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table,
+th,
+td {
+  font-size: 14px;
+  line-height: 20px;
+}
