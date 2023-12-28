@@ -1,13 +1,53 @@
+:root {
+  --monza-50: #fff1f2;
+  --monza-100: #ffe0e2;
+  --monza-200: #ffc7cb;
+  --monza-300: #ffa0a7;
+  --monza-400: #ff6974;
+  --monza-500: #fa3947;
+  --monza-600: #e71b2a;
+  --monza-700: #c1121f;
+  --monza-800: #a1131e;
+  --monza-900: #85171f;
+  --monza-950: #49060b;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  border-bottom: 1px dotted black;
+  color: var(--monza-500)
+}
+
+h1.title {
+  border: none;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-style: italic;
+}
+
+a {
+  color: var(--monza-500)
+}
+
+a:visited {
+  color: var(--monza-700)
+}
+
 .container {
   margin: auto;
   width: 100%;
-  background-color: red;
+  background-color: var(--monza-500);
   padding: 10px;
 }
 

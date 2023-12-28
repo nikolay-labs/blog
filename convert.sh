@@ -14,6 +14,9 @@ for mdfile in "$SOURCE_DIR"/*.md; do
     # Get the filename without the extension
     filename=$(basename -- "$mdfile")
     filename="${filename%.*}"
+    filename=${filename// /-}
+
+    echo $filename
 
     # Convert the file to HTML and save it in DEST_DIR
     pandoc "$mdfile" --section-divs --toc -s --css="../styles.css" -B header.html -A footer.html -o "$DEST_DIR/$filename.html"
