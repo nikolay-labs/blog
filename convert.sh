@@ -19,7 +19,7 @@ for mdfile in "$SOURCE_DIR"/*.md; do
     echo $filename
 
     # Convert the file to HTML and save it in DEST_DIR
-    pandoc "$mdfile" --section-divs --toc -s --css="../styles.css" -B header.html -A footer.html -o "$DEST_DIR/$filename.html"
+    pandoc "$mdfile" --section-divs --toc -s --css="../styles.css" -H analytics.html -B header.html -A footer.html -o "$DEST_DIR/$filename.html"
 done
 
 echo "Markdown to HTML conversion complete."
