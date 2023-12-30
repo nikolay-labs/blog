@@ -10,6 +10,19 @@
   --monza-800: #a1131e;
   --monza-900: #85171f;
   --monza-950: #49060b;
+
+  --cod-gray-50: #f6f6f6;
+  --cod-gray-100: #e7e7e7;
+  --cod-gray-200: #d1d1d1;
+  --cod-gray-300: #b0b0b0;
+  --cod-gray-400: #888888;
+  --cod-gray-500: #6d6d6d;
+  --cod-gray-600: #5d5d5d;
+  --cod-gray-700: #4f4f4f;
+  --cod-gray-800: #454545;
+  --cod-gray-900: #3d3d3d;
+  --cod-gray-950: #121212;
+
 }
 
 body {
@@ -18,13 +31,73 @@ body {
   margin: 0;
 }
 
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: whitesmoke;
+    color: var(--cod-gray-900);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var(--monza-500) !important;
+    border-color: var(--monza-500);
+  }
+
+  a {
+    color: var(--monza-500);
+  }
+
+  a:visited {
+    color: var(--monza-700);
+  }
+
+  .container {
+    background-color: var(--monza-500);
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #1E1E1E;
+    color: whitesmoke;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var(--monza-500);
+    border-color: var(--monza-500);
+  }
+
+  a {
+    color: var(--monza-500)
+  }
+
+  a:visited {
+    color: var(--monza-700)
+  }
+
+  .container {
+    background-color: var(--monza-500);
+  }
+
+  pre.sourceCode {
+    background-color: var(--cod-gray-950);
+    padding: 10px 5px;
+  }
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   border-bottom: 1px dotted black;
-  color: var(--monza-500)
 }
 
 h1.title {
@@ -36,18 +109,9 @@ h1.title {
   font-style: italic;
 }
 
-a {
-  color: var(--monza-500)
-}
-
-a:visited {
-  color: var(--monza-700)
-}
-
 .container {
   margin: auto;
   width: 100%;
-  background-color: var(--monza-500);
   padding: 10px;
 }
 
@@ -94,9 +158,34 @@ section.level1 {
 }
 
 table {
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Dark Mode Colors using prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+
+  table,
+  tr:nth-child(even) {
+    background-color: var(--cod-gray-950);
+  }
+
+  th {
+    background-color: var(--cod-gray-900);
+  }
+}
+
+table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f9f9f9;
 }
 
 th,
@@ -107,12 +196,7 @@ td {
 }
 
 th {
-  background-color: #f2f2f2;
   font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
 }
 
 table,
