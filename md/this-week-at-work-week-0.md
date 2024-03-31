@@ -1,6 +1,6 @@
 ---
 title: this week at work. week 0
-subtitle: what's been going at work
+subtitle: learning to be the best at what i do one week at a time
 keywords: new project;lost;confused;mid-level developer;
 category: main
 author: nikolay
@@ -8,6 +8,7 @@ date: March 31, 2024
 description: learning how to be the best at what i do. 
 ---
 
+# week 0
 I've had this job for a couple of years. I started programming at university. And now I want to be the best. I’ve been reading a lot. The last piece of advice I came across was that there is no substitute for deliberate practice. I also read that the statement _“learning X will make you a better programmer”_ is flimsy. The latter rang true but my mind put up a bit of a fight - another excuse to not be coding down the drain. Then I thought about how this hasn’t worked for me just last week. Cut back to me
 
 # writing elm
